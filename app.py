@@ -16,6 +16,22 @@ st.write(' - 테스트 데이터 : 106건')
 st.write(' - 모델 정확도 : ') 
 
 # 3. 데이터시각화
-
+col1, col2 = st.columns( 2 )
+with col1:
+  st.subheader('데이터시각화1')
+  st.image('')
+with col2:
+  st.subheader('데이터시각화2')
+  si.image('')
 
 # 4. 모델 활용
+st.subheader('모델 활용')
+st.write('***다음을 입력하세요. 인공지능이 당신의 학업성취도를 예측해드립니다.')
+a = st.number_input(' 공부시간 입력 ', value=0)   # 사용자 입력
+b = st.number_input(' 공부시간 입력 ', value=0)
+c = st.number_input(' 공부시간 입력 ', value=0)
+d = st.number_input(' 공부시간 입력 ', value=0)
+e = st.number_input(' 공부시간 입력 ', value=0)
+
+
+
