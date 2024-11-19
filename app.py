@@ -33,8 +33,11 @@ b = st.number_input(' 기분 입력(1~4)', value=0)
 c = st.number_input(' 수면 입력(1~4)', value=0)
 d = st.number_input(' 집중 입력(1~4)', value=0)
 e = st.number_input(' 공부시간 입력 ', value=0)
+
 if st.button('예측하기'):
-  input_data[[a,b,c,d]]
+  input_data[[a,b,c,d,e]]
+  p = model.predict(input_data)
+  
 
 
 
