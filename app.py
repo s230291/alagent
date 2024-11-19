@@ -13,7 +13,8 @@ st.write(' - 기계학습 알고리즘 : 선형 회귀 ')
 st.write(' - 학습 데이터 출처 : https://www.kaggle.com/')
 st.write(' - 훈련    데이터 : 246건')
 st.write(' - 테스트 데이터 : 106건')
-st.write(' - 모델 정확도 : ') 
+st.write(' - 모델 정확도 : -0.01') 
+st.write(' - 독립변수 개수 : 5건')
 
 # 3. 데이터시각화
 col1, col2, col3 = st.columns( 3 )
