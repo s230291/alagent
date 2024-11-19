@@ -19,19 +19,30 @@ st.write(' - 모델 정확도 : ')
 col1, col2 = st.columns( 2 )
 with col1:
   st.subheader('데이터시각화1')
-  st.image('')
+  st.image('시각화1.png')
 with col2:
   st.subheader('데이터시각화2')
-  si.image('')
+  si.image('시각화2.png')
 
 # 4. 모델 활용
 st.subheader('모델 활용')
 st.write('***다음을 입력하세요. 인공지능이 당신의 학업성취도를 예측해드립니다.')
-a = st.number_input(' 공부시간 입력 ', value=0)   # 사용자 입력
-b = st.number_input(' 공부시간 입력 ', value=0)
-c = st.number_input(' 공부시간 입력 ', value=0)
-d = st.number_input(' 공부시간 입력 ', value=0)
+
+a = st.number_input(' 의욕지수 입력(1~4)', value=0)   # 사용자 입력
+b = st.number_input(' 기분 입력(1~4)', value=0)
+c = st.number_input(' 수면 입력(1~4)', value=0)
+d = st.number_input(' 집중 입력(1~4)', value=0)
 e = st.number_input(' 공부시간 입력 ', value=0)
+if st.button('예측하기'):
+  input_data[[a,b,c,d]]
+
+
+
+
+
+
+
+
 
 
 
