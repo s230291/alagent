@@ -4,7 +4,7 @@ import streamlit as st
 
 # 1. 기계학습 모델 파일 로드
 import joblib
-model = joblib.load('')
+model = joblib.load('linear_regression_model.pkl')
 
 # 2. 모델 설명 
 st.title('심리적 요인과 환경에 따른 학업성취도 예측 에이전트')
@@ -41,6 +41,10 @@ e = st.number_input(' 공부시간 입력 ', value=0)
 if st.button('예측하기'):
   input_data[[a,b,c,d,e]]
   p = model.predict(input_data)
+  if p[0] == 1 :
+    st.success('')
+  else:
+    st.success('')
   
 
 
