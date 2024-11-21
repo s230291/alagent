@@ -30,6 +30,8 @@ with col3:
 
 
 # 4. 모델 활용
+st.markdown('''<style>body{background-color: lightblue;}</style>''',unsafe_allow_html=True)
+
 st.subheader('모델 활용')
 st.write('*다음을 입력하세요. 인공지능이 당신의 학업성취도를 예측해드립니다.*')
 #st.write('***인공지능 예측에 사용된 데이터는 저장되지 않으며, 사용 후 삭제됩니다.')
