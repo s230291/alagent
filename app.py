@@ -23,10 +23,10 @@ with col1:
   st.image('시각화1.png')
 with col2:
   st.subheader('데이터시각화2')
-  si.image('시각화2.png')
+  st.image('시각화2.png')
 with col3:
   st.subheader('데이터시각화3')
-  si.image('시각화3.png')
+  st.image('시각화3.png')
 
 # 4. 모델 활용
 st.subheader('모델 활용')
