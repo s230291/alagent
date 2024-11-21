@@ -32,11 +32,11 @@ with col3:
 st.subheader('모델 활용')
 st.write('***다음을 입력하세요. 인공지능이 당신의 학업성취도를 예측해드립니다.')
 
-a = st.number_input(' 의욕지수 입력(1~4)', value=0)   # 사용자 입력
-b = st.number_input(' 기분 입력(1~4)', value=0)
-c = st.number_input(' 수면 입력(1~4)', value=0)
-d = st.number_input(' 집중 입력(1~4)', value=0)
-e = st.number_input(' 공부시간 입력 ', value=0)
+a = st.selectbox(' 의욕지수 입력(1~4)', [1,2,3,4])   # 사용자 입력
+b = st.selectbox(' 기분 입력(1~4)', [1,2,3,4])
+c = st.selectbox(' 수면 입력(1~4)', [1,2,3,4])
+d = st.selectbox(' 집중 입력(1~4)', [1,2,3,4])
+e = st.selectbox(' 공부시간 입력( 1~2시간: 0, 2~4시간: 1, 4시간 이상: 2) ', [0,1,2])       #모르겠어요
 
 if st.button('예측하기'):
   input_data[[a,b,c,d,e]]
