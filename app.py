@@ -38,13 +38,10 @@ c = st.selectbox(' 수면 입력(1~4)', [1,2,3,4])
 d = st.selectbox(' 집중 입력(1~4)', [1,2,3,4])
 e = st.selectbox(' 공부시간 입력( 1-2시간: 0, 2-4시간: 1, 4시간 이상: 2) ', [0,1,2])       #모르겠어요
 
-if st.button('예측하기'):
-  input_data[[a,b,c,d,e]]
-  p = model.predict(input_data)
-  if p[0] == 1 :
-    st.success('')
-  else:
-    st.success('')
+if st.button('점수예측'):            # 사용자가 '점수예측' 버튼을 누르면
+        input_data = [[a,b,c,d,e]]     # 사용자가 입력한 a,b,c 를 input_data에 저장하고
+        p = model.predict(input_data)         # model이 예측한 값을 p에 저장한다
+        st.write(f"인공지능 예측점수는 {p}점 입니다.")
   
 
 
