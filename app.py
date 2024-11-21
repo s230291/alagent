@@ -20,13 +20,13 @@ st.write(' - 독립변수 개수 : 5건')
 col1, col2, col3 = st.columns( 3 )
 with col1:
   st.subheader('데이터시각화1')
-  st.image('시각화1.png')
+  st.image('')
 with col2:
   st.subheader('데이터시각화2')
-  si.image('시각화2.png')
+  si.image('')
 with col3:
   st.subheader('데이터시각화3')
-  si.image('시각화3.png')
+  si.image('')
 
 # 4. 모델 활용
 st.subheader('모델 활용')
