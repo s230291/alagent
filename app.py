@@ -41,8 +41,7 @@ e = st.selectbox(' 공부시간 입력( 1-2시간: 0, 2-4시간: 1, 4시간 이�
 if st.button('점수예측'):            # 사용자가 '점수예측' 버튼을 누르면
         input_data = [[a,b,c,d,e]]     # 사용자가 입력한 a,b,c 를 input_data에 저장하고
         q = model.predict(input_data)         # model이 예측한 값을 p에 저장한다
-        p = round(q)
-        st.write("인공지능 예측점수는 {p}점 입니다.")
+        st.write("인공지능 예측점수는 {q}점 입니다.")
   
 
 
